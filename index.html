@@ -439,6 +439,17 @@
             text-align: left;
         }
 
+        .modal-body ul {
+            color: var(--text-gray);
+            text-align: left;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .modal-body li {
+            margin-bottom: 5px;
+        }
+
         /* Contact Section */
         .contact-container {
             display: grid;
@@ -648,7 +659,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Hi, I'm <span>Saif Aldridge P. Benedicto</span></h1>
-                <p>Fourth-year college student building a collection of my completed online courses and certifications in AI and networking.</p>
+                <p>Fourth-year college student building a collection of my completed online courses and certifications in AI, Networking, Data Analytics, and more.</p>
                 <a href="#certificates" class="btn">View My Certificates</a>
             </div>
         </div>
@@ -664,21 +675,22 @@
                 </div>
                 <div class="about-text">
                     <h3>Fourth-Year College Student & Tech Enthusiast</h3>
-                    <p>I'm currently in my fourth year of college, pursuing my degree while expanding my knowledge through various online courses and certifications. My focus areas include Artificial Intelligence, Networking, and Front-End Development.</p>
-                    <p>This e-portfolio serves as a digital collection of the certifications and badges I've earned through online learning platforms. It showcases my commitment to continuous learning and skill development in the tech field.</p>
+                    <p>I'm currently in my fourth year of college, pursuing my degree while expanding my knowledge through various online courses and certifications. My focus areas include Artificial Intelligence, Networking, Data Analytics, and System Administration.</p>
+                    <p>This e-portfolio serves as a digital collection of the certifications and badges I've earned through online learning platforms and webinars. It showcases my commitment to continuous learning and skill development in the tech field.</p>
                     
                     <div class="student-info">
                         <h4>Academic Information</h4>
                         <p><strong>Name:</strong> Saif Aldridge P. Benedicto</p>
                         <p><strong>Year Level:</strong> Fourth Year College</p>
-                        <p><strong>Focus Areas:</strong> AI Fundamentals, Networking, System Administration And Maintenance</p>
+                        <p><strong>Focus Areas:</strong> AI Fundamentals, Networking, Data Analytics, System Administration And Maintenance</p>
                     </div>
                     
                     <div class="skills">
                         <div class="skill">AI Fundamentals</div>
                         <div class="skill">Networking</div>
-                        <div class="skill">System Administration And Maintenance</div>
-                        <div class="skill">Front-End Design</div>
+                        <div class="skill">Data Analytics</div>
+                        <div class="skill">System Administration</div>
+                        <div class="skill">Cybersecurity</div>
                         <div class="skill">IBM SkillsBuild</div>
                         <div class="skill">Cisco Networking</div>
                     </div>
@@ -697,13 +709,16 @@
                 <button class="filter-btn" data-filter="ai">AI Courses</button>
                 <button class="filter-btn" data-filter="networking">Networking</button>
                 <button class="filter-btn" data-filter="ibm">IBM SkillsBuild</button>
+                <button class="filter-btn" data-filter="webinar">Webinars</button>
+                <button class="filter-btn" data-filter="data">Data Analytics</button>
+                <button class="filter-btn" data-filter="other">Other</button>
             </div>
             
             <div class="portfolio-grid">
-                <!-- Badge 1 -->
+                <!-- IBM AI Fundamentals Badge (S3.png) -->
                 <div class="portfolio-item" data-category="ai ibm" data-modal="modal1">
                     <div class="portfolio-img">
-                        <img src="S3.png">
+                        <img src="S3.png" alt="AI Fundamentals Badge">
                         <div class="portfolio-overlay">
                             <i class="fas fa-expand"></i>
                         </div>
@@ -714,38 +729,10 @@
                     </div>
                 </div>
                 
-                <!-- Badge 2 -->
-                <div class="portfolio-item" data-category="networking" data-modal="modal2">
+                <!-- Apply AI: Update Your Resume (S2.png) -->
+                <div class="portfolio-item" data-category="ai" data-modal="modal2">
                     <div class="portfolio-img">
-                        <img src="S2.png" alt="Networking Academy Badge">
-                        <div class="portfolio-overlay">
-                            <i class="fas fa-expand"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Networking Academy</h3>
-                        <p>Cisco Networking Academy certification with focus on networking fundamentals.</p>
-                    </div>
-                </div>
-                
-                <!-- Badge 3 -->
-                <div class="portfolio-item" data-category="networking ai" data-modal="modal3">
-                    <div class="portfolio-img">
-                        <img src="S1.png" alt="Analyze Customer Reviews Badge">
-                        <div class="portfolio-overlay">
-                            <i class="fas fa-expand"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Apply AI: Analyze Customer Reviews</h3>
-                        <p>DICT-ITU DTC Initiative certification through Cisco Networking Academy.</p>
-                    </div>
-                </div>
-                
-                <!-- Badge 4 -->
-                <div class="portfolio-item" data-category="networking ai" data-modal="modal4">
-                    <div class="portfolio-img">
-                        <img src="B2.png" alt="Update Your Resume Badge">
+                        <img src="S2.png" alt="Apply AI Update Resume">
                         <div class="portfolio-overlay">
                             <i class="fas fa-expand"></i>
                         </div>
@@ -756,31 +743,143 @@
                     </div>
                 </div>
                 
-                <!-- Badge 5 -->
-                <div class="portfolio-item" data-category="ai ibm" data-modal="modal5">
+                <!-- Apply AI: Analyze Customer Reviews (S1.png) -->
+                <div class="portfolio-item" data-category="ai" data-modal="modal3">
                     <div class="portfolio-img">
-                        <img src="B4.png" alt="AI Fundamentals Certificate">
+                        <img src="S1.png" alt="Analyze Customer Reviews">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Apply AI: Analyze Customer Reviews</h3>
+                        <p>DICT-ITU DTC Initiative certification through Cisco Networking Academy.</p>
+                    </div>
+                </div>
+                
+                <!-- Cisco Networking Badge (B2.png) -->
+                <div class="portfolio-item" data-category="networking" data-modal="modal4">
+                    <div class="portfolio-img">
+                        <img src="B2.png" alt="Cisco Networking">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Networking Academy Verified</h3>
+                        <p>Cisco Networking Academy certification with focus on networking fundamentals.</p>
+                    </div>
+                </div>
+                
+                <!-- Cisco AI Analysis (B3.png) -->
+                <div class="portfolio-item" data-category="networking ai" data-modal="modal5">
+                    <div class="portfolio-img">
+                        <img src="B3.png" alt="Cisco AI Analysis">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Apply AI: Analyze Customer Reviews</h3>
+                        <p>Cisco Networking Academy verified certification for AI analysis.</p>
+                    </div>
+                </div>
+                
+                <!-- AI Fundamentals IBM (B4.png) -->
+                <div class="portfolio-item" data-category="ai ibm" data-modal="modal6">
+                    <div class="portfolio-img">
+                        <img src="B4.png" alt="AI Fundamentals IBM">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>AI Fundamentals IBM SkillsBuild</h3>
+                        <p>Networking Academy and IBM collaboration certification.</p>
+                    </div>
+                </div>
+                
+                <!-- AI Fundamentals Certificate (S4.png) -->
+                <div class="portfolio-item" data-category="ai ibm" data-modal="modal7">
+                    <div class="portfolio-img">
+                        <img src="S4.png" alt="AI Fundamentals Certificate">
                         <div class="portfolio-overlay">
                             <i class="fas fa-expand"></i>
                         </div>
                     </div>
                     <div class="portfolio-info">
                         <h3>AI Fundamentals Certificate</h3>
-                        <p>IBM SkillsBuild statement of achievement for AI fundamentals course.</p>
+                        <p>IBM SkillsBuild certification through Cisco Networking Academy.</p>
                     </div>
                 </div>
                 
-                <!-- Badge 6 -->
-                <div class="portfolio-item" data-category="ai ibm" data-modal="modal6">
+                <!-- Statement of Achievement (S5.png) -->
+                <div class="portfolio-item" data-category="ai ibm" data-modal="modal8">
                     <div class="portfolio-img">
-                        <img src="S4.png" alt="AI Fundamentals with IBM SkillsBuild">
+                        <img src="S5.png" alt="Statement of Achievement">
                         <div class="portfolio-overlay">
                             <i class="fas fa-expand"></i>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <h3>AI Fundamentals with IBM SkillsBuild</h3>
-                        <p>Certificate for completing AI Fundamentals through Cisco Networking Academy.</p>
+                        <h3>AI Fundamentals Statement</h3>
+                        <p>Detailed achievement in AI Fundamentals with IBM SkillsBuild.</p>
+                    </div>
+                </div>
+                
+                <!-- Data Privacy Webinar (707ead6f-ccc8-4197-b827-d28a32db6c23.jpg) -->
+                <div class="portfolio-item" data-category="webinar" data-modal="modal9">
+                    <div class="portfolio-img">
+                        <img src="data_privacy.png" alt="Data Privacy Webinar">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Data Privacy, FOI & AI Safety</h3>
+                        <p>DICT Region V webinar attendance certificate.</p>
+                    </div>
+                </div>
+                
+                <!-- Digital Safety Webinar (f84fb000-159c-4595-956e-4512f5fe223a.jpg) -->
+                <div class="portfolio-item" data-category="webinar" data-modal="modal10">
+                    <div class="portfolio-img">
+                        <img src="digital_safety.png" alt="Digital Safety Webinar">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Digital Safety & PNPKI</h3>
+                        <p>DICT CAR webinar on Cybersecurity and Philippine PKI.</p>
+                    </div>
+                </div>
+                
+                <!-- Data Analytics Essentials -->
+                <div class="portfolio-item" data-category="data networking" data-modal="modal11">
+                    <div class="portfolio-img">
+                        <img src="badge.png" alt="Data Analytics Essentials">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Data Analytics Essentials</h3>
+                        <p>Cisco Networking Academy verified certification.</p>
+                    </div>
+                </div>
+
+                <!-- New Certificate C1.png -->
+                <div class="portfolio-item" data-category="other" data-modal="modal12">
+                    <div class="portfolio-img">
+                        <img src="C1.png" alt="Additional Certificate">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Course Completion Certificate</h3>
+                        <p>Additional certification or badge earned.</p>
                     </div>
                 </div>
             </div>
@@ -788,7 +887,7 @@
     </section>
 
     <!-- Modals for certificate details -->
-    <!-- Modal 1 -->
+    <!-- Modal 1 (S3.png) -->
     <div class="modal" id="modal1">
         <div class="modal-content">
             <div class="modal-header">
@@ -797,30 +896,41 @@
             </div>
             <div class="modal-body">
                 <img src="S3.png" alt="AI Fundamentals Badge">
+                <p><strong>Recipient:</strong> Aldridge Benedicto</p>
                 <p><strong>Issuer:</strong> IBM SkillsBuild</p>
                 <p><strong>Date:</strong> Jan 09, 2026</p>
-                <p><strong>Description:</strong> This certificate recognizes successful completion of Artificial Intelligence Fundamentals course covering AI concepts, ethics, and practical applications.</p>
+                <p><strong>Description:</strong> In recognition of the commitment to achieve professional excellence. Has successfully satisfied the requirements for Artificial Intelligence Fundamentals.</p>
             </div>
         </div>
     </div>
 
-    <!-- Modal 2 -->
+    <!-- Modal 2 (S2.png) -->
     <div class="modal" id="modal2">
         <div class="modal-content">
             <div class="modal-header">
-                <h3>Networking Academy</h3>
+                <h3>Apply AI: Update Your Resume</h3>
                 <button class="close-modal">&times;</button>
             </div>
             <div class="modal-body">
-                <img src="S2.png" alt="Networking Academy Badge">
-                <p><strong>Issuer:</strong> Cisco Networking Academy</p>
-                <p><strong>Status:</strong> Verified</p>
-                <p><strong>Description:</strong> Certification from Cisco Networking Academy demonstrating proficiency in networking fundamentals and concepts.</p>
+                <img src="S2.png" alt="Update Your Resume">
+                <p><strong>Recipient:</strong> Aldridge Benedicto</p>
+                <p><strong>Certificate Type:</strong> Course Completion</p>
+                <p><strong>Skills Developed:</strong></p>
+                <ul>
+                    <li>Identify and redact private information in resumes before using public AI tools</li>
+                    <li>Select appropriate AI tools and workflows balancing privacy, accuracy, and speed</li>
+                    <li>Extract project accomplishments and metadata from source documents</li>
+                    <li>Synthesize concise, evidence-based bullet points for resumes</li>
+                    <li>Conduct LLM self-checks and human validation to ensure factual accuracy</li>
+                    <li>Compile and categorize skills into ATS-friendly formats</li>
+                    <li>Apply styling using word processor or HTML templates to produce PDFs</li>
+                    <li>Customize resumes line-by-line to match specific job requirements</li>
+                </ul>
             </div>
         </div>
     </div>
 
-    <!-- Modal 3 -->
+    <!-- Modal 3 (S1.png) -->
     <div class="modal" id="modal3">
         <div class="modal-content">
             <div class="modal-header">
@@ -828,58 +938,168 @@
                 <button class="close-modal">&times;</button>
             </div>
             <div class="modal-body">
-                <img src="S1.png" alt="Analyze Customer Reviews Badge">
-                <p><strong>Issuer:</strong> DICT-ITU DTC Initiative through Cisco Networking Academy</p>
+                <img src="S1.png" alt="Analyze Customer Reviews">
                 <p><strong>Recipient:</strong> Aldridge Benedicto</p>
+                <p><strong>Issuer:</strong> DICT-ITU DTC Initiative through Cisco Networking Academy</p>
                 <p><strong>Description:</strong> This certificate is awarded for successfully completing the "Apply AI: Analyze Customer Reviews" course offered through the Cisco Networking Academy program.</p>
             </div>
         </div>
     </div>
 
-    <!-- Modal 4 -->
+    <!-- Modal 4 (B2.png) -->
     <div class="modal" id="modal4">
         <div class="modal-content">
             <div class="modal-header">
-                <h3>Apply AI: Update Your Resume</h3>
+                <h3>Networking Academy Verified</h3>
                 <button class="close-modal">&times;</button>
             </div>
             <div class="modal-body">
-                <img src="B2.png"Update Your Resume Badge">
-                <p><strong>Certificate Type:</strong> Course Completion</p>
-                <p><strong>Recipient:</strong> Aldridge Benedicto</p>
-                <p><strong>Skills Developed:</strong> AI tool selection, privacy protection, resume optimization, ATS formatting, and validation techniques for resume enhancement.</p>
+                <img src="B2.png" alt="Networking Academy">
+                <p><strong>Issuer:</strong> Cisco Networking Academy</p>
+                <p><strong>Course:</strong> Apply AI: Update Your Resume</p>
+                <p><strong>Status:</strong> Verified</p>
             </div>
         </div>
     </div>
 
-    <!-- Modal 5 -->
+    <!-- Modal 5 (B3.png) -->
     <div class="modal" id="modal5">
         <div class="modal-content">
             <div class="modal-header">
-                <h3>AI Fundamentals Statement of Achievement</h3>
+                <h3>Apply AI: Analyze Customer Reviews</h3>
                 <button class="close-modal">&times;</button>
             </div>
             <div class="modal-body">
-                <img src="B4.png" alt="AI Fundamentals Certificate">
-                <p><strong>Issuer:</strong> IBM SkillsBuild via Cisco Networking Academy</p>
-                <p><strong>Recipient:</strong> Aldridge Benedicto</p>
-                <p><strong>Skills:</strong> Understanding of AI concepts, ethical implications, machine learning project setup, and AI job role requirements.</p>
+                <img src="B3.png" alt="Cisco AI Analysis">
+                <p><strong>Issuer:</strong> Cisco Networking Academy</p>
+                <p><strong>Course:</strong> Apply AI: Analyze Customer Reviews</p>
+                <p><strong>Status:</strong> Verified</p>
             </div>
         </div>
     </div>
 
-    <!-- Modal 6 -->
+    <!-- Modal 6 (B4.png) -->
     <div class="modal" id="modal6">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>AI Fundamentals</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="B4.png" alt="AI Fundamentals">
+                <p><strong>Issuer:</strong> IBM SkillsBuild & Cisco Networking Academy</p>
+                <p><strong>Course:</strong> AI Fundamentals</p>
+                <p><strong>Status:</strong> Verified</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 7 (S4.png) -->
+    <div class="modal" id="modal7">
         <div class="modal-content">
             <div class="modal-header">
                 <h3>AI Fundamentals with IBM SkillsBuild</h3>
                 <button class="close-modal">&times;</button>
             </div>
             <div class="modal-body">
-                <img src="S4.png" alt="AI Fundamentals with IBM SkillsBuild">
-                <p><strong>Issuer:</strong> IBM SkillsBuild through Cisco Networking Academy</p>
+                <img src="S4.png" alt="AI Fundamentals Certificate">
                 <p><strong>Recipient:</strong> Aldridge Benedicto</p>
-                <p><strong>Description:</strong> Certificate awarded for successfully completing AI Fundamentals with IBM SkillsBuild offered by DICT-ITU DTC Initiative through the Cisco Networking Academy program.</p>
+                <p><strong>Issuer:</strong> IBM SkillsBuild through Cisco Networking Academy</p>
+                <p><strong>Description:</strong> This certificate is awarded for successfully completing AI Fundamentals with IBM SkillsBuild offered by DICT-ITU DTC Initiative through the Cisco Networking Academy program.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 8 (S5.png) -->
+    <div class="modal" id="modal8">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Statement of Achievement - AI Fundamentals</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="S5.png" alt="Statement of Achievement">
+                <p><strong>Recipient:</strong> Aldridge Benedicto</p>
+                <p><strong>Program:</strong> AI Fundamentals with IBM SkillsBuild</p>
+                <p><strong>Provider:</strong> Cisco Networking Academy in collaboration with IBM</p>
+                <p><strong>Skills Acquired:</strong></p>
+                <ul>
+                    <li>Understand fundamental artificial intelligence concepts including natural language processing, computer vision, machine learning, deep learning, chatbots, and neural networks</li>
+                    <li>Recognize the ethical implications of artificial intelligence using the five-pillar framework: fairness, robustness, explainability, transparency, and privacy</li>
+                    <li>Set up a machine learning project in IBM Watson Studio</li>
+                    <li>Explain the skills required for success in various AI job roles</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 9 - Data Privacy Webinar -->
+    <div class="modal" id="modal9">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Data Privacy, Freedom of Information & AI Safety</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="data_privacy.png" alt="Data Privacy Webinar Certificate">
+                <p><strong>Certificate Type:</strong> Certificate of Attendance</p>
+                <p><strong>Recipient:</strong> Saif Aldridge P. Benedicto</p>
+                <p><strong>Event:</strong> Webinar on Data Privacy, Freedom of Information, and AI Safety</p>
+                <p><strong>Organizer:</strong> Department of Information and Communications Technology - Region V Provincial Office of Catanduanes</p>
+                <p><strong>Date:</strong> February 3, 2026</p>
+                <p><strong>Platform:</strong> FB Live and Google Meet</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 10 - Digital Safety Webinar -->
+    <div class="modal" id="modal10">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Digital Safety: Cybersecurity & PNPKI</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="digital_safety.png" alt="Digital Safety Webinar Certificate">
+                <p><strong>Certificate Type:</strong> Certificate of Participation</p>
+                <p><strong>Recipient:</strong> Benedicto Saif Aldridge Perdido</p>
+                <p><strong>Event:</strong> Digital Safety Webinar</p>
+                <p><strong>Topics Covered:</strong> Cybersecurity and Introduction to Philippine National Public Key Infrastructure (PNPKI)</p>
+                <p><strong>Duration:</strong> 4-hour webinar</p>
+                <p><strong>Date:</strong> January 28, 2026</p>
+                <p><strong>Organizer:</strong> Department of Information and Communications Technology - CAR</p>
+                <p><strong>Venue:</strong> DICT-CAR, St. Joseph Village Baguio City (via Zoom)</p>
+                <p><strong>Signed by:</strong> Jimmicio S. Daoaten, Regional Director DICT CAR</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 11 - Data Analytics Essentials -->
+    <div class="modal" id="modal11">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Data Analytics Essentials</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="badge.png" alt="Data Analytics Essentials Badge">
+                <p><strong>Issuer:</strong> Cisco Networking Academy</p>
+                <p><strong>Status:</strong> Verified</p>
+                <p><strong>Description:</strong> Cisco Networking Academy certification in Data Analytics Essentials, covering fundamental concepts and practical applications in data analysis.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 12 - New Certificate C1.png -->
+    <div class="modal" id="modal12">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Additional Certificate</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="C1.png" alt="Certificate">
+                <p><strong>Description:</strong> This certificate represents an additional achievement or course completion. (Refer to the image for details.)</p>
             </div>
         </div>
     </div>
@@ -892,7 +1112,7 @@
             <div class="contact-container">
                 <div class="contact-info">
                     <h3>Connect With Me</h3>
-                    <p>I'm always open to discussing opportunities related to AI, networking, or web development. Feel free to reach out if you have any questions or would like to connect!</p>
+                    <p>I'm always open to discussing opportunities related to AI, networking, data analytics, or web development. Feel free to reach out if you have any questions or would like to connect!</p>
                     
                     <div class="contact-details">
                         <div class="contact-item">
@@ -989,7 +1209,8 @@
                 const filterValue = button.getAttribute('data-filter');
                 
                 portfolioItems.forEach(item => {
-                    if (filterValue === 'all' || item.getAttribute('data-category').includes(filterValue)) {
+                    const categories = item.getAttribute('data-category');
+                    if (filterValue === 'all' || categories.includes(filterValue)) {
                         item.style.display = 'block';
                         setTimeout(() => {
                             item.style.opacity = '1';
@@ -1012,8 +1233,10 @@
             item.addEventListener('click', () => {
                 const modalId = item.getAttribute('data-modal');
                 const modal = document.getElementById(modalId);
-                modal.style.display = 'block';
-                document.body.style.overflow = 'hidden'; // Prevent scrolling
+                if (modal) {
+                    modal.style.display = 'block';
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling
+                }
             });
         });
         
@@ -1044,12 +1267,8 @@
             
             // Get form values
             const name = contactForm.querySelector('input[type="text"]').value;
-            const email = contactForm.querySelector('input[type="email"]').value;
-            const subject = contactForm.querySelectorAll('input[type="text"]')[1].value;
-            const message = contactForm.querySelector('textarea').value;
             
-            // In a real application, you would send this data to a server
-            // For this demo, we'll just show an alert
+            // Show alert
             alert(`Thank you for your message, ${name}! I'll get back to you soon.`);
             
             // Reset form
